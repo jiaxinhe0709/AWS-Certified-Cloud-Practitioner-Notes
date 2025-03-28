@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Exam 3</title>
+    <style>
+        body { font-family: Arial; padding: 20px; max-width: 800px; margin: auto; }
+        .question { margin-bottom: 20px; }
+        .summary { font-weight: bold; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>Practice Exam 3</h1>
+    <form id="quizForm">
+        <div class='question'><p><strong>1. Where can you store files in AWS? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q1' value='A'> A. Amazon EFS.</label><br>
+<label><input type='checkbox' name='q1' value='B'> B. Amazon SNS.</label><br>
+<label><input type='checkbox' name='q1' value='C'> C. Amazon EBS.</label><br>
+<label><input type='checkbox' name='q1' value='D'> D. Amazon ECS.</label><br>
+<label><input type='checkbox' name='q1' value='E'> E. Amazon EMR.</label><br>
+</div><br>
+<div class='question'><p><strong>2. Which AWS service can be used to store and reliably deliver messages across distributed systems?</strong></p>
+<label><input type='radio' name='q2' value='A'> A. Amazon Simple Queue Service.</label><br>
+<label><input type='radio' name='q2' value='B'> B. AWS Storage Gateway.</label><br>
+<label><input type='radio' name='q2' value='C'> C. Amazon Simple Email Service.</label><br>
+<label><input type='radio' name='q2' value='D'> D. Amazon Simple Storage Service.</label><br>
+</div><br>
+<div class='question'><p><strong>3. Which of the following describes the payment model that AWS makes available for customers that can commit to using Amazon EC2 over a one or 3-year term to reduce their total computing costs?</strong></p>
+<label><input type='radio' name='q3' value='A'> A. Pay less as AWS grows.</label><br>
+<label><input type='radio' name='q3' value='B'> B. Pay as you go.</label><br>
+<label><input type='radio' name='q3' value='C'> C. Pay less by using more.</label><br>
+<label><input type='radio' name='q3' value='D'> D. Save when you reserve.</label><br>
+</div><br>
+<div class='question'><p><strong>4. A company is migrating its on-premises database to Amazon RDS. What should the company do to ensure Amazon RDS costs are kept to a minimum?</strong></p>
+<label><input type='radio' name='q4' value='A'> A. Right-size before and after migration.</label><br>
+<label><input type='radio' name='q4' value='B'> B. Use a Multi-Region Active-Passive architecture.</label><br>
+<label><input type='radio' name='q4' value='C'> C. Combine On-demand Capacity Reservations with Saving Plans.</label><br>
+<label><input type='radio' name='q4' value='D'> D. Use a Multi-Region Active-Active architecture.</label><br>
+</div><br>
+<div class='question'><p><strong>5. What is the primary storage service used by Amazon RDS database instances?</strong></p>
+<label><input type='radio' name='q5' value='A'> A. Amazon Glacier.</label><br>
+<label><input type='radio' name='q5' value='B'> B. Amazon EBS.</label><br>
+<label><input type='radio' name='q5' value='C'> C. Amazon EFS.</label><br>
+<label><input type='radio' name='q5' value='D'> D. Amazon S3.</label><br>
+</div><br>
+<div class='question'><p><strong>6. A company is developing a new application using a microservices framework. The new application is having performance and latency issues. Which AWS Service should be used to troubleshoot these issues?</strong></p>
+<label><input type='radio' name='q6' value='A'> A. AWS CodePipeline.</label><br>
+<label><input type='radio' name='q6' value='B'> B. AWS X-Ray.</label><br>
+<label><input type='radio' name='q6' value='C'> C. Amazon Inspector.</label><br>
+<label><input type='radio' name='q6' value='D'> D. AWS CloudTrail.</label><br>
+</div><br>
+<div class='question'><p><strong>7. Which of the following AWS services is designed with native Multi-AZ fault tolerance in mind? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q7' value='A'> A. Amazon Redshift.</label><br>
+<label><input type='checkbox' name='q7' value='B'> B. AWS Snowball.</label><br>
+<label><input type='checkbox' name='q7' value='C'> C. Amazon Simple Storage Service.</label><br>
+<label><input type='checkbox' name='q7' value='D'> D. Amazon EBS.</label><br>
+<label><input type='checkbox' name='q7' value='E'> E. Amazon DynamoDB.</label><br>
+</div><br>
+<div class='question'><p><strong>8. What are the Amazon RDS features that can be used to improve the availability of your database? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q8' value='A'> A. AWS Regions.</label><br>
+<label><input type='checkbox' name='q8' value='B'> B. Multi-AZ Deployment.</label><br>
+<label><input type='checkbox' name='q8' value='C'> C. Automatic patching.</label><br>
+<label><input type='checkbox' name='q8' value='D'> D. Read Replicas.</label><br>
+<label><input type='checkbox' name='q8' value='E'> E. Edge Locations.</label><br>
+</div><br>
+<div class='question'><p><strong>9. Sarah has deployed an application in the Northern California (us-west-1) region. After examining the application’s traffic, she notices that about 30% of the traffic is coming from Asia. What can she do to reduce latency for the users in Asia?</strong></p>
+<label><input type='radio' name='q9' value='A'> A. Replicate the current resources across multiple Availability Zones within the same region.</label><br>
+<label><input type='radio' name='q9' value='B'> B. Migrate the application to a hosting provider in Asia.</label><br>
+<label><input type='radio' name='q9' value='C'> C. Recreate the website content.</label><br>
+<label><input type='radio' name='q9' value='D'> D. Create a CDN using CloudFront, so that content is cached at Edge Locations close to and in Asia.</label><br>
+</div><br>
+<div class='question'><p><strong>10. An organization runs many systems and uses many AWS products. Which of the following services enables them to control how each developer interacts with these products?</strong></p>
+<label><input type='radio' name='q10' value='A'> A. AWS Identity and Access Management.</label><br>
+<label><input type='radio' name='q10' value='B'> B. Amazon RDS.</label><br>
+<label><input type='radio' name='q10' value='C'> C. Network Access Control Lists.</label><br>
+<label><input type='radio' name='q10' value='D'> D. Amazon EMR.</label><br>
+</div><br>
+<div class='question'><p><strong>11. Using Amazon EC2 falls under which of the following cloud computing models?</strong></p>
+<label><input type='radio' name='q11' value='A'> A. Iaas & SaaS.</label><br>
+<label><input type='radio' name='q11' value='B'> B. IaaS.</label><br>
+<label><input type='radio' name='q11' value='C'> C. SaaS.</label><br>
+<label><input type='radio' name='q11' value='D'> D. PaaS.</label><br>
+</div><br>
+<div class='question'><p><strong>12. Which of the below is a best-practice when building applications on AWS?</strong></p>
+<label><input type='radio' name='q12' value='A'> A. Strengthen physical security by applying the principle of least privilege.</label><br>
+<label><input type='radio' name='q12' value='B'> B. Ensure that the application runs on hardware from trusted vendors.</label><br>
+<label><input type='radio' name='q12' value='C'> C. Use IAM policies to maintain performance.</label><br>
+<label><input type='radio' name='q12' value='D'> D. Decouple the components of the application so that they run independently.</label><br>
+</div><br>
+<div class='question'><p><strong>13. Your company is designing a new application that will store and retrieve photos and videos. Which of the following services should you recommend as the underlying storage mechanism?</strong></p>
+<label><input type='radio' name='q13' value='A'> A. Amazon EBS.</label><br>
+<label><input type='radio' name='q13' value='B'> B. Amazon SQS.</label><br>
+<label><input type='radio' name='q13' value='C'> C. Amazon Instance store.</label><br>
+<label><input type='radio' name='q13' value='D'> D. Amazon S3.</label><br>
+</div><br>
+<div class='question'><p><strong>14. Amazon Glacier is an Amazon S3 storage class that is suitable for storing [...] & [...]. (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q14' value='A'> A. Active archives.</label><br>
+<label><input type='checkbox' name='q14' value='B'> B. Dynamic websites’ assets.</label><br>
+<label><input type='checkbox' name='q14' value='C'> C. Long-term analytic data.</label><br>
+<label><input type='checkbox' name='q14' value='D'> D. Active databases.</label><br>
+<label><input type='checkbox' name='q14' value='E'> E. Cached data.</label><br>
+</div><br>
+<div class='question'><p><strong>15. What does Amazon Elastic Beanstalk provide?</strong></p>
+<label><input type='radio' name='q15' value='A'> A. A PaaS solution to automate application deployment.</label><br>
+<label><input type='radio' name='q15' value='B'> B. A compute engine for Amazon ECS.</label><br>
+<label><input type='radio' name='q15' value='C'> C. A scalable file storage solution for use with AWS and on-premises servers.</label><br>
+<label><input type='radio' name='q15' value='D'> D. A NoSQL database service.</label><br>
+</div><br>
+<div class='question'><p><strong>16. What is the AWS service that performs automated network assessments of Amazon EC2 instances to check for vulnerabilities?</strong></p>
+<label><input type='radio' name='q16' value='A'> A. Amazon Kinesis.</label><br>
+<label><input type='radio' name='q16' value='B'> B. Security groups.</label><br>
+<label><input type='radio' name='q16' value='C'> C. Amazon Inspector.</label><br>
+<label><input type='radio' name='q16' value='D'> D. AWS Network Access Control Lists.</label><br>
+</div><br>
+<div class='question'><p><strong>17. Under the Shared Responsibility Model, which of the following controls do customers fully inherit from AWS? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q17' value='A'> A. Patch management controls.</label><br>
+<label><input type='checkbox' name='q17' value='B'> B. Database controls.</label><br>
+<label><input type='checkbox' name='q17' value='C'> C. Awareness & Training.</label><br>
+<label><input type='checkbox' name='q17' value='D'> D. Environmental controls.</label><br>
+<label><input type='checkbox' name='q17' value='E'> E. Physical controls.</label><br>
+</div><br>
+<div class='question'><p><strong>18. A company needs to host a database in Amazon RDS for at least three years. Which of the following options would be the most cost-effective solution?</strong></p>
+<label><input type='radio' name='q18' value='A'> A. Reserved instances     - No Upfront.</label><br>
+<label><input type='radio' name='q18' value='B'> B. Reserved instances     - Partial Upfront.</label><br>
+<label><input type='radio' name='q18' value='C'> C. On-Demand instances.</label><br>
+<label><input type='radio' name='q18' value='D'> D. Spot Instances.</label><br>
+</div><br>
+<div class='question'><p><strong>19. Your application has recently experienced significant global growth, and international users are complaining of high latency. What is the AWS characteristic that can help improve your international users’ experience?</strong></p>
+<label><input type='radio' name='q19' value='A'> A. Elasticity.</label><br>
+<label><input type='radio' name='q19' value='B'> B. Global reach.</label><br>
+<label><input type='radio' name='q19' value='C'> C. Data durability.</label><br>
+<label><input type='radio' name='q19' value='D'> D. High availability.</label><br>
+</div><br>
+<div class='question'><p><strong>20. Savings Plans are available for which of the following AWS compute services? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q20' value='A'> A. AWS Batch.</label><br>
+<label><input type='checkbox' name='q20' value='B'> B. AWS Outposts.</label><br>
+<label><input type='checkbox' name='q20' value='C'> C. Amazon Lightsail.</label><br>
+<label><input type='checkbox' name='q20' value='D'> D. Amazon EC2.</label><br>
+<label><input type='checkbox' name='q20' value='E'> E. AWS Lambda.</label><br>
+</div><br>
+<div class='question'><p><strong>21. A company has business critical workloads hosted on AWS and they are unwilling to accept any downtime. Which of the following is a recommended best practice to protect their workloads in the event of an unexpected natural disaster?</strong></p>
+<label><input type='radio' name='q21' value='A'> A. Replicate data across multiple Edge Locations worldwide and use Amazon CloudFront to perform automatic failover in the event of an outage.</label><br>
+<label><input type='radio' name='q21' value='B'> B. Deploy AWS resources across multiple Availability Zones within the same AWS Region.</label><br>
+<label><input type='radio' name='q21' value='C'> C. Create point-in-time backups in another subnet and recover this data when a disaster occurs.</label><br>
+<label><input type='radio' name='q21' value='D'> D. Deploy AWS resources to another AWS Region and implement an Active-Active disaster recovery strategy.</label><br>
+</div><br>
+<div class='question'><p><strong>22. Which statement is correct with regards to AWS service limits? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q22' value='A'> A. You can contact AWS support to increase the service limits.</label><br>
+<label><input type='checkbox' name='q22' value='B'> B. Each IAM user has the same service limit.</label><br>
+<label><input type='checkbox' name='q22' value='C'> C. There are no service limits on AWS.</label><br>
+<label><input type='checkbox' name='q22' value='D'> D. You can use the AWS Trusted Advisor to monitor your service limits.</label><br>
+<label><input type='checkbox' name='q22' value='E'> E. The Amazon Simple Email Service is responsible for sending email notifications when usage approaches a service limit.</label><br>
+</div><br>
+<div class='question'><p><strong>23. What is the AWS tool that enables you to use scripts to manage all AWS services and resources?</strong></p>
+<label><input type='radio' name='q23' value='A'> A. AWS Console.</label><br>
+<label><input type='radio' name='q23' value='B'> B. AWS Service Catalog.</label><br>
+<label><input type='radio' name='q23' value='C'> C. AWS OpsWorks.</label><br>
+<label><input type='radio' name='q23' value='D'> D. AWS CLI.</label><br>
+</div><br>
+<div class='question'><p><strong>24. What are the connectivity options that can be used to build hybrid cloud architectures? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q24' value='A'> A. AWS Artifact.</label><br>
+<label><input type='checkbox' name='q24' value='B'> B. AWS Cloud9.</label><br>
+<label><input type='checkbox' name='q24' value='C'> C. AWS Direct Connect.</label><br>
+<label><input type='checkbox' name='q24' value='D'> D. AWS CloudTrail.</label><br>
+<label><input type='checkbox' name='q24' value='E'> E. AWS VPN.</label><br>
+</div><br>
+<div class='question'><p><strong>25. A company has deployed a new web application on multiple Amazon EC2 instances. Which of the following should they use to ensure that the incoming HTTP traffic is distributed evenly across the instances?</strong></p>
+<label><input type='radio' name='q25' value='A'> A. AWS EC2 Auto Recovery.</label><br>
+<label><input type='radio' name='q25' value='B'> B. AWS Auto Scaling.</label><br>
+<label><input type='radio' name='q25' value='C'> C. AWS Network Load Balancer.</label><br>
+<label><input type='radio' name='q25' value='D'> D. AWS Application Load Balancer.</label><br>
+</div><br>
+<div class='question'><p><strong>26. Which of the following AWS offerings is a MySQL-compatible relational database service that can scale capacity automatically based on demand?</strong></p>
+<label><input type='radio' name='q26' value='A'> A. Amazon Neptune.</label><br>
+<label><input type='radio' name='q26' value='B'> B. Amazon Aurora.</label><br>
+<label><input type='radio' name='q26' value='C'> C. Amazon RDS for SQL Server.</label><br>
+<label><input type='radio' name='q26' value='D'> D. Amazon RDS for PostgreSQL.</label><br>
+</div><br>
+<div class='question'><p><strong>27. Which of the following can help protect your EC2 instances from DDoS attacks? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q27' value='A'> A. AWS CloudHSM.</label><br>
+<label><input type='checkbox' name='q27' value='B'> B. Security Groups.</label><br>
+<label><input type='checkbox' name='q27' value='C'> C. AWS Batch.</label><br>
+<label><input type='checkbox' name='q27' value='D'> D. AWS IAM.</label><br>
+<label><input type='checkbox' name='q27' value='E'> E. Network Access Control Lists (Network ACLs).</label><br>
+</div><br>
+<div class='question'><p><strong>28. What is the AWS data warehouse service that supports a high level of query performance on large amounts of datasets?</strong></p>
+<label><input type='radio' name='q28' value='A'> A. Amazon Redshift.</label><br>
+<label><input type='radio' name='q28' value='B'> B. Amazon Kinesis.</label><br>
+<label><input type='radio' name='q28' value='C'> C. Amazon DynamoDB.</label><br>
+<label><input type='radio' name='q28' value='D'> D.  Amazon RDS.</label><br>
+</div><br>
+<div class='question'><p><strong>29. Which of the following should be considered when performing a TCO analysis to compare the costs of running an application on AWS instead of on-premises?</strong></p>
+<label><input type='radio' name='q29' value='A'> A. Application development.</label><br>
+<label><input type='radio' name='q29' value='B'> B. Market research.</label><br>
+<label><input type='radio' name='q29' value='C'> C. Business analysis.</label><br>
+<label><input type='radio' name='q29' value='D'> D. Physical hardware.</label><br>
+</div><br>
+<div class='question'><p><strong>30. How are AWS customers billed for Linux-based Amazon EC2 usage?</strong></p>
+<label><input type='radio' name='q30' value='A'> A. EC2 instances will be billed on one second increments, with a minimum of one minute.</label><br>
+<label><input type='radio' name='q30' value='B'> B. EC2 instances will be billed on one hour increments, with a minimum of one day.</label><br>
+<label><input type='radio' name='q30' value='C'> C. EC2 instances will be billed on one minute increments, with a minimum of one hour.</label><br>
+<label><input type='radio' name='q30' value='D'> D. EC2 instances will be billed on one day increments, with a minimum of one month.</label><br>
+</div><br>
+<div class='question'><p><strong>31. Which of the following will impact the price paid for an EC2 instance? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q31' value='A'> A. Instance type.</label><br>
+<label><input type='checkbox' name='q31' value='B'> B. The Availability Zone where the instance is provisioned.</label><br>
+<label><input type='checkbox' name='q31' value='C'> C. Load balancing.</label><br>
+<label><input type='checkbox' name='q31' value='D'> D. Number of buckets.</label><br>
+<label><input type='checkbox' name='q31' value='E'> E. Number of private IPs.</label><br>
+</div><br>
+<div class='question'><p><strong>32. A customer spent a lot of time configuring a newly deployed Amazon EC2 instance. After the workload increases, the customer decides to provision another EC2 instance with an identical configuration. How can the customer achieve this?</strong></p>
+<label><input type='radio' name='q32' value='A'> A. By creating an AWS Config template from the old instance and launching a new instance from it.</label><br>
+<label><input type='radio' name='q32' value='B'> B. By creating an EBS Snapshot of the old instance.</label><br>
+<label><input type='radio' name='q32' value='C'> C. By installing Aurora on EC2 and launching a new instance from it.</label><br>
+<label><input type='radio' name='q32' value='D'> D. By creating an AMI from the old instance and launching a new instance from it.</label><br>
+</div><br>
+<div class='question'><p><strong>33. A company uses AWS Organizations to manage all of its AWS accounts. Which of the following allows the company to restrict what services and actions are allowed in each individual account?</strong></p>
+<label><input type='radio' name='q33' value='A'> A. IAM Principals.</label><br>
+<label><input type='radio' name='q33' value='B'> B. AWS Service Control Policies (SCPs).</label><br>
+<label><input type='radio' name='q33' value='C'> C. IAM policies.</label><br>
+<label><input type='radio' name='q33' value='D'> D. AWS Fargate.</label><br>
+</div><br>
+<div class='question'><p><strong>34. Which of the following statements describes the AWS Cloud’s agility?</strong></p>
+<label><input type='radio' name='q34' value='A'> A. AWS allows you to host your applications in multiple regions around the world.</label><br>
+<label><input type='radio' name='q34' value='B'> B. AWS provides customizable hardware at the lowest possible cost.</label><br>
+<label><input type='radio' name='q34' value='C'> C. AWS allows you to provision resources in minutes.</label><br>
+<label><input type='radio' name='q34' value='D'> D. AWS allows you to pay upfront to reduce costs.</label><br>
+</div><br>
+<div class='question'><p><strong>35. What are the benefits of using the Amazon Relational Database Service? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q35' value='A'> A. Lower administrative burden.</label><br>
+<label><input type='checkbox' name='q35' value='B'> B. Complete control over the underlying host.</label><br>
+<label><input type='checkbox' name='q35' value='C'> C. Resizable compute capacity.</label><br>
+<label><input type='checkbox' name='q35' value='D'> D. Scales automatically to larger or smaller instance types.</label><br>
+<label><input type='checkbox' name='q35' value='E'> E. Supports the document and key-value data structure.</label><br>
+</div><br>
+<div class='question'><p><strong>36. What is the connectivity option that uses Internet Protocol Security (IPSec) to establish encrypted connectivity between an on-premises network and the AWS Cloud?</strong></p>
+<label><input type='radio' name='q36' value='A'> A. Internet Gateway.</label><br>
+<label><input type='radio' name='q36' value='B'> B. AWS IQ.</label><br>
+<label><input type='radio' name='q36' value='C'> C. AWS Direct Connect.</label><br>
+<label><input type='radio' name='q36' value='D'> D. AWS Site-to-Site VPN.</label><br>
+</div><br>
+<div class='question'><p><strong>37. What is the minimum level of AWS support that provides 24x7 access to technical support engineers via phone and chat?</strong></p>
+<label><input type='radio' name='q37' value='A'> A. Enterprise Support.</label><br>
+<label><input type='radio' name='q37' value='B'> B. Developer Support.</label><br>
+<label><input type='radio' name='q37' value='C'> C. Basic Support.</label><br>
+<label><input type='radio' name='q37' value='D'> D. Business Support.</label><br>
+</div><br>
+<div class='question'><p><strong>38. Which of the following is used to control network traffic in AWS? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q38' value='A'> A. Network Access Control Lists (NACLs).</label><br>
+<label><input type='checkbox' name='q38' value='B'> B. Key Pairs.</label><br>
+<label><input type='checkbox' name='q38' value='C'> C. Access Keys.</label><br>
+<label><input type='checkbox' name='q38' value='D'> D. IAM Policies.</label><br>
+<label><input type='checkbox' name='q38' value='E'> E. Security Groups.</label><br>
+</div><br>
+<div class='question'><p><strong>39. A company has developed a media transcoding application in AWS. The application is designed to recover quickly from hardware failures. Which one of the following types of instance would be the most cost-effective choice to use?</strong></p>
+<label><input type='radio' name='q39' value='A'> A. Reserved instances.</label><br>
+<label><input type='radio' name='q39' value='B'> B. Spot Instances.</label><br>
+<label><input type='radio' name='q39' value='C'> C. On-Demand instances.</label><br>
+<label><input type='radio' name='q39' value='D'> D. Dedicated instances.</label><br>
+</div><br>
+<div class='question'><p><strong>40. Which AWS Service provides the current status of all AWS Services in all AWS Regions?</strong></p>
+<label><input type='radio' name='q40' value='A'> A. AWS Service Health Dashboard.</label><br>
+<label><input type='radio' name='q40' value='B'> B. AWS Management Console.</label><br>
+<label><input type='radio' name='q40' value='C'> C. Amazon CloudWatch.</label><br>
+<label><input type='radio' name='q40' value='D'> D. AWS Personal Health Dashboard.</label><br>
+</div><br>
+<div class='question'><p><strong>41. Which AWS service or feature can be used to call AWS Services from different programming languages?</strong></p>
+<label><input type='radio' name='q41' value='A'> A. AWS Software Development Kit.</label><br>
+<label><input type='radio' name='q41' value='B'> B. AWS Command Line Interface.</label><br>
+<label><input type='radio' name='q41' value='C'> C. AWS CodeDeploy.</label><br>
+<label><input type='radio' name='q41' value='D'> D. AWS Management Console.</label><br>
+</div><br>
+<div class='question'><p><strong>42. Which AWS Service can be used to register a new domain name?</strong></p>
+<label><input type='radio' name='q42' value='A'> A. Amazon Personalize.</label><br>
+<label><input type='radio' name='q42' value='B'> B. Amazon Route 53.</label><br>
+<label><input type='radio' name='q42' value='C'> C. AWS KMS.</label><br>
+<label><input type='radio' name='q42' value='D'> D. AWS Config.</label><br>
+</div><br>
+<div class='question'><p><strong>43. App development companies move their business to AWS to reduce time-to-market and improve customer satisfaction, what are the AWS automation tools that help them deploy their applications faster? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q43' value='A'> A. AWS CloudFormation.</label><br>
+<label><input type='checkbox' name='q43' value='B'> B. AWS Migration Hub.</label><br>
+<label><input type='checkbox' name='q43' value='C'> C. AWS IAM.</label><br>
+<label><input type='checkbox' name='q43' value='D'> D. AWS Elastic Beanstalk.</label><br>
+<label><input type='checkbox' name='q43' value='E'> E. Amazon Macie.</label><br>
+</div><br>
+<div class='question'><p><strong>44. Which AWS service provides cost-optimization recommendations?</strong></p>
+<label><input type='radio' name='q44' value='A'> A. AWS Trusted Advisor.</label><br>
+<label><input type='radio' name='q44' value='B'> B. AWS Pricing Calculator.</label><br>
+<label><input type='radio' name='q44' value='C'> C. Amazon QuickSight.</label><br>
+<label><input type='radio' name='q44' value='D'> D. AWS X-Ray.</label><br>
+</div><br>
+<div class='question'><p><strong>45. A company has hundreds of VPCs in multiple AWS Regions worldwide. What service does AWS offer to simplify the connection management among the VPCs?</strong></p>
+<label><input type='radio' name='q45' value='A'> A. VPC Peering.</label><br>
+<label><input type='radio' name='q45' value='B'> B. AWS Transit Gateway.</label><br>
+<label><input type='radio' name='q45' value='C'> C. Amazon Connect.</label><br>
+<label><input type='radio' name='q45' value='D'> D. Security Groups.</label><br>
+</div><br>
+<div class='question'><p><strong>46. What is one benefit and one drawback of buying a reserved EC2 instance? (Select TWO)</strong></p>
+<label><input type='checkbox' name='q46' value='A'> A. Instances can be shut down by AWS at any time with no notification.</label><br>
+<label><input type='checkbox' name='q46' value='B'> B. Reserved instances require at least a one-year pricing commitment.</label><br>
+<label><input type='checkbox' name='q46' value='C'> C. There is no additional charge for using dedicated instances.</label><br>
+<label><input type='checkbox' name='q46' value='D'> D. Reserved instances provide a significant discount compared to on-demand instances.</label><br>
+<label><input type='checkbox' name='q46' value='E'> E. Reserved instances are best suited for periodic workloads.</label><br>
+</div><br>
+<div class='question'><p><strong>47. Why does every AWS Region contain multiple Availability Zones?</strong></p>
+<label><input type='radio' name='q47' value='A'> A. Multiple Availability Zones allows you to build resilient and highly available architectures.</label><br>
+<label><input type='radio' name='q47' value='B'> B. Multiple Availability Zones results in lower total cost compared to deploying in a single Availability Zone.</label><br>
+<label><input type='radio' name='q47' value='C'> C. Multiple Availability Zones allows for data replication and global reach.</label><br>
+<label><input type='radio' name='q47' value='D'> D. Multiple Availability Zones within a region increases the storage capacity available in that region.</label><br>
+</div><br>
+<div class='question'><p><strong>48. What is the most cost-effective purchasing option for running a set of EC2 instances that must always be available for a period of two months?</strong></p>
+<label><input type='radio' name='q48' value='A'> A. On-Demand Instances.</label><br>
+<label><input type='radio' name='q48' value='B'> B. Spot Instances.</label><br>
+<label><input type='radio' name='q48' value='C'> C. Reserved Instances     - All Upfront.</label><br>
+<label><input type='radio' name='q48' value='D'> D. Reserved Instances     - No Upfront.</label><br>
+</div><br>
+<div class='question'><p><strong>49. Which of the following is a benefit of running an application in multiple Availability Zones?</strong></p>
+<label><input type='radio' name='q49' value='A'> A. Allows you to exceed AWS service limits.</label><br>
+<label><input type='radio' name='q49' value='B'> B. Reduces application response time between servers and global users.</label><br>
+<label><input type='radio' name='q49' value='C'> C. Increases available compute capacity.</label><br>
+<label><input type='radio' name='q49' value='D'> D. Increases the availability of your application.</label><br>
+</div><br>
+<div class='question'><p><strong>50. Data security is one of the top priorities of AWS. How does AWS deal with old storage devices that have reached the end of their useful life?</strong></p>
+<label><input type='radio' name='q50' value='A'> A. AWS sells the old devices to other hosting providers.</label><br>
+<label><input type='radio' name='q50' value='B'> B. AWS destroys the old devices in accordance with industry-standard practices.</label><br>
+<label><input type='radio' name='q50' value='C'> C. AWS sends the old devices for remanufacturing.</label><br>
+<label><input type='radio' name='q50' value='D'> D. AWS stores the old devices in a secure place.</label><br>
+</div><br>
+
+        <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+    <p id="result" class="summary"></p>
+
+    <script>
+        const answers = {}
+answers['q1'] = ['A', 'C'];
+answers['q2'] = ['A'];
+answers['q3'] = ['D'];
+answers['q4'] = ['A'];
+answers['q5'] = ['B'];
+answers['q6'] = ['B'];
+answers['q7'] = ['C', 'E'];
+answers['q8'] = ['B', 'D'];
+answers['q9'] = ['D'];
+answers['q10'] = ['A'];
+answers['q11'] = ['B'];
+answers['q12'] = ['D'];
+answers['q13'] = ['D'];
+answers['q14'] = ['A', 'C'];
+answers['q15'] = ['A'];
+answers['q16'] = ['C'];
+answers['q17'] = ['D', 'E'];
+answers['q18'] = ['B'];
+answers['q19'] = ['B'];
+answers['q20'] = ['D', 'E'];
+answers['q21'] = ['D'];
+answers['q22'] = ['A', 'D'];
+answers['q23'] = ['D'];
+answers['q24'] = ['C', 'E'];
+answers['q25'] = ['D'];
+answers['q26'] = ['B'];
+answers['q27'] = ['B', 'E'];
+answers['q28'] = ['A'];
+answers['q29'] = ['D'];
+answers['q30'] = ['A'];
+answers['q31'] = ['A', 'B'];
+answers['q32'] = ['D'];
+answers['q33'] = ['B'];
+answers['q34'] = ['C'];
+answers['q35'] = ['A', 'C'];
+answers['q36'] = ['D'];
+answers['q37'] = ['D'];
+answers['q38'] = ['A', 'E'];
+answers['q39'] = ['B'];
+answers['q40'] = ['A'];
+answers['q41'] = ['A'];
+answers['q42'] = ['B'];
+answers['q43'] = ['A', 'D'];
+answers['q44'] = ['A'];
+answers['q45'] = ['B'];
+answers['q46'] = ['B', 'D'];
+answers['q47'] = ['A'];
+answers['q48'] = ['A'];
+answers['q49'] = ['D'];
+answers['q50'] = ['B'];
+
+
+        function submitQuiz() {
+            let score = 0;
+            let total = Object.keys(answers).length;
+
+            for (let key in answers) {
+                let selected = Array.from(document.querySelectorAll(`input[name='${key}']:checked`)).map(el => el.value);
+                let correct = answers[key];
+
+                let selectedSorted = selected.slice().sort().join('');
+                let correctSorted = correct.slice().sort().join('');
+                let isCorrect = selectedSorted === correctSorted;
+
+                if (isCorrect) score++;
+            }
+
+            document.getElementById("result").innerText = `Your Score: ${score} / ${total}`;
+        }
+    </script>
+</body>
+</html>

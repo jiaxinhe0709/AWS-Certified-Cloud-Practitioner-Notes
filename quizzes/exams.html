@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exams</title>
+    <style>
+        body { font-family: Arial; padding: 20px; max-width: 800px; margin: auto; }
+        .question { margin-bottom: 20px; }
+        .summary { font-weight: bold; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>Exams</h1>
+    <form id="quizForm">
+        
+        <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+    <p id="result" class="summary"></p>
+
+    <script>
+        const answers = {}
+
+
+        function submitQuiz() {
+            let score = 0;
+            let total = Object.keys(answers).length;
+
+            for (let key in answers) {
+                let selected = Array.from(document.querySelectorAll(`input[name='${key}']:checked`)).map(el => el.value);
+                let correct = answers[key];
+
+                let selectedSorted = selected.slice().sort().join('');
+                let correctSorted = correct.slice().sort().join('');
+                let isCorrect = selectedSorted === correctSorted;
+
+                if (isCorrect) score++;
+            }
+
+            document.getElementById("result").innerText = `Your Score: ${score} / ${total}`;
+        }
+    </script>
+</body>
+</html>

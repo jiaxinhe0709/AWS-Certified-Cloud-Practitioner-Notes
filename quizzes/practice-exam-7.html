@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Exam 7</title>
+    <style>
+        body { font-family: Arial; padding: 20px; max-width: 800px; margin: auto; }
+        .question { margin-bottom: 20px; }
+        .summary { font-weight: bold; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>Practice Exam 7</h1>
+    <form id="quizForm">
+        <div class='question'><p><strong>1. Which of the following can help secure your sensitive data in Amazon S3? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q1' value='A'> A. Delete the encryption keys once your data is encrypted.</label><br>
+<label><input type='checkbox' name='q1' value='B'> B. With AWS you do not need to worry about encryption.</label><br>
+<label><input type='checkbox' name='q1' value='C'> C. Enable S3 Encryption.</label><br>
+<label><input type='checkbox' name='q1' value='D'> D. Encrypt the data prior to uploading it.</label><br>
+<label><input type='checkbox' name='q1' value='E'> E. Delete all IAM users that have access to S3.</label><br>
+</div><br>
+<div class='question'><p><strong>2. Which AWS service helps developers compile and test their code?</strong></p>
+<label><input type='radio' name='q2' value='A'> A. AWS CodeDeploy.</label><br>
+<label><input type='radio' name='q2' value='B'> B. AWS CodeCommit.</label><br>
+<label><input type='radio' name='q2' value='C'> C. CloudEndure.</label><br>
+<label><input type='radio' name='q2' value='D'> D. AWS CodeBuild.</label><br>
+</div><br>
+<div class='question'><p><strong>3. Which of the following will affect how much you are charged for storing objects in S3? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q3' value='A'> A. Using default encryption for any number of S3 buckets.</label><br>
+<label><input type='checkbox' name='q3' value='B'> B. The number of EBS volumes attached to your instances.</label><br>
+<label><input type='checkbox' name='q3' value='C'> C. The storage class used for the objects stored.</label><br>
+<label><input type='checkbox' name='q3' value='D'> D. Creating and deleting S3 buckets.</label><br>
+<label><input type='checkbox' name='q3' value='E'> E. The total size in gigabytes of all objects stored.</label><br>
+</div><br>
+<div class='question'><p><strong>4. What does the Amazon CloudFront service provide? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q4' value='A'> A. Tracks user activity and APl usage.</label><br>
+<label><input type='checkbox' name='q4' value='B'> B. Increases application availability by caching at the edge.</label><br>
+<label><input type='checkbox' name='q4' value='C'> C. Enables faster disaster recovery.</label><br>
+<label><input type='checkbox' name='q4' value='D'> D. Stores archived data at very low costs.</label><br>
+<label><input type='checkbox' name='q4' value='E'> E. Delivers content to end users with low latency.</label><br>
+</div><br>
+<div class='question'><p><strong>5. You are facing a lot of problems with your current contact center. Which service provides a cloud-based contact center that can deliver a better service for your customers?</strong></p>
+<label><input type='radio' name='q5' value='A'> A. Amazon Lightsail.</label><br>
+<label><input type='radio' name='q5' value='B'> B. Amazon Connect.</label><br>
+<label><input type='radio' name='q5' value='C'> C. AWS Direct Connect.</label><br>
+<label><input type='radio' name='q5' value='D'> D. AWS Elastic Beanstalk.</label><br>
+</div><br>
+<div class='question'><p><strong>6. You have migrated your application to AWS recently. How can you view the AWS costs applied to your account?</strong></p>
+<label><input type='radio' name='q6' value='A'> A. Using the AWS Cost & Usage Report.</label><br>
+<label><input type='radio' name='q6' value='B'> B. Using the AWS Total Cost of Ownership (TCO) dashboard.</label><br>
+<label><input type='radio' name='q6' value='C'> C. Using the AWS CloudWatch logs dashboard.</label><br>
+<label><input type='radio' name='q6' value='D'> D. Using the Amazon VPC dashboard.</label><br>
+</div><br>
+<div class='question'><p><strong>7. Which of the following are valid Amazon EC2 Reserved Instance types? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q7' value='A'> A. Convertible.</label><br>
+<label><input type='checkbox' name='q7' value='B'> B. Expedited.</label><br>
+<label><input type='checkbox' name='q7' value='C'> C. Bulk.</label><br>
+<label><input type='checkbox' name='q7' value='D'> D. Spot.</label><br>
+<label><input type='checkbox' name='q7' value='E'> E. Standard.</label><br>
+</div><br>
+<div class='question'><p><strong>8. Which of the following services gives you access to all AWS auditor-issued reports and certifications?</strong></p>
+<label><input type='radio' name='q8' value='A'> A. AWS Artifact.</label><br>
+<label><input type='radio' name='q8' value='B'> B. AWS Config.</label><br>
+<label><input type='radio' name='q8' value='C'> C. Amazon CloudWatch.</label><br>
+<label><input type='radio' name='q8' value='D'> D. AWS CloudTrail.</label><br>
+</div><br>
+<div class='question'><p><strong>9. You manage a blog on AWS that has different environments: development, testing, and production. What can you use to create a custom console for each environment to view and manage your resources easily?</strong></p>
+<label><input type='radio' name='q9' value='A'> A. AWS Resource Groups.</label><br>
+<label><input type='radio' name='q9' value='B'> B. AWS Placement Groups.</label><br>
+<label><input type='radio' name='q9' value='C'> C. AWS Management Console.</label><br>
+<label><input type='radio' name='q9' value='D'> D. AWS Tag Editor.</label><br>
+</div><br>
+<div class='question'><p><strong>10. Which AWS service collects metrics from running EC2 instances?</strong></p>
+<label><input type='radio' name='q10' value='A'> A. Amazon Inspector.</label><br>
+<label><input type='radio' name='q10' value='B'> B. Amazon CloudWatch.</label><br>
+<label><input type='radio' name='q10' value='C'> C. AWS CloudFormation.</label><br>
+<label><input type='radio' name='q10' value='D'> D. AWS CloudTrail.</label><br>
+</div><br>
+<div class='question'><p><strong>11. Your web application currently faces performance issues and suffers from long load times. Which of the following AWS services could help fix these issues and improve performance?</strong></p>
+<label><input type='radio' name='q11' value='A'> A. Amazon Detective.</label><br>
+<label><input type='radio' name='q11' value='B'> B. AWS X-Ray.</label><br>
+<label><input type='radio' name='q11' value='C'> C. AWS Security Hub.</label><br>
+<label><input type='radio' name='q11' value='D'> D. AWS Shield.</label><br>
+</div><br>
+<div class='question'><p><strong>12. Which of the following compute resources are serverless? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q12' value='A'> A. Amazon EC2.</label><br>
+<label><input type='checkbox' name='q12' value='B'> B. AWS Fargate.</label><br>
+<label><input type='checkbox' name='q12' value='C'> C. AWS Lambda.</label><br>
+<label><input type='checkbox' name='q12' value='D'> D. Amazon ECS.</label><br>
+<label><input type='checkbox' name='q12' value='E'> E. Amazon EMR.</label><br>
+</div><br>
+<div class='question'><p><strong>13. For compliance and regulatory purposes, a government agency requires that their applications must run on hardware that is dedicated to them only. How can you meet this requirement?</strong></p>
+<label><input type='radio' name='q13' value='A'> A. Use EC2 Dedicated Hosts.</label><br>
+<label><input type='radio' name='q13' value='B'> B. Use EC2 Reserved Instances.</label><br>
+<label><input type='radio' name='q13' value='C'> C. Use EC2 Spot Instances.</label><br>
+<label><input type='radio' name='q13' value='D'> D. Use EC2 On-demand Instances.</label><br>
+</div><br>
+<div class='question'><p><strong>14. Which AWS Cost Governance best practice recommends refining workloads regularly to make the most of existing AWS resources and reduce costs?</strong></p>
+<label><input type='radio' name='q14' value='A'> A. Tagging Enforcement.</label><br>
+<label><input type='radio' name='q14' value='B'> B. Architecture Optimization.</label><br>
+<label><input type='radio' name='q14' value='C'> C. Budgeting Processes.</label><br>
+<label><input type='radio' name='q14' value='D'> D. Resource Controls.</label><br>
+</div><br>
+<div class='question'><p><strong>15. An organization needs to build a financial application that requires support for ACID transactions. Which AWS database service is most appropriate in this case?</strong></p>
+<label><input type='radio' name='q15' value='A'> A. RedShift.</label><br>
+<label><input type='radio' name='q15' value='B'> B. RDS.</label><br>
+<label><input type='radio' name='q15' value='C'> C. CloudHSM.</label><br>
+<label><input type='radio' name='q15' value='D'> D. DMS.</label><br>
+</div><br>
+<div class='question'><p><strong>16. What can you use to assign permissions directly to an IAM user?</strong></p>
+<label><input type='radio' name='q16' value='A'> A. IAM Identity.</label><br>
+<label><input type='radio' name='q16' value='B'> B. IAM Group.</label><br>
+<label><input type='radio' name='q16' value='C'> C. IAM Role.</label><br>
+<label><input type='radio' name='q16' value='D'> D. IAM Policy.</label><br>
+</div><br>
+<div class='question'><p><strong>17. The owner of an E-Commerce application notices that the compute capacity requirements vary heavily from time to time. What makes AWS more economical than traditional data centers for this type of application?</strong></p>
+<label><input type='radio' name='q17' value='A'> A. AWS allows customers to launch powerful EC2 instances to handle spikes in load.</label><br>
+<label><input type='radio' name='q17' value='B'> B. AWS allows customers to pay upfront to get bigger discounts.</label><br>
+<label><input type='radio' name='q17' value='C'> C. AWS allows customers to launch and terminate EC2 instances based on demand.</label><br>
+<label><input type='radio' name='q17' value='D'> D. AWS allows customers to choose cheaper types of EC2 instances that best fit their needs.</label><br>
+</div><br>
+<div class='question'><p><strong>18. Amazon RDS supports multiple database engines to choose from. Which of the following is not one of them?</strong></p>
+<label><input type='radio' name='q18' value='A'> A. PostgreSQL.</label><br>
+<label><input type='radio' name='q18' value='B'> B. Oracle.</label><br>
+<label><input type='radio' name='q18' value='C'> C. Microsoft SQL Server.</label><br>
+<label><input type='radio' name='q18' value='D'> D. Teradata.</label><br>
+</div><br>
+<div class='question'><p><strong>19. Which of the following AWS services would help you migrate on-premise databases to AWS?</strong></p>
+<label><input type='radio' name='q19' value='A'> A. AWS DMS.</label><br>
+<label><input type='radio' name='q19' value='B'> B. Amazon S3 Transfer Acceleration.</label><br>
+<label><input type='radio' name='q19' value='C'> C. AWS Directory Service.</label><br>
+<label><input type='radio' name='q19' value='D'> D. AWS Transit Gateway.</label><br>
+</div><br>
+<div class='question'><p><strong>20. For new AWS customers, what is the EASIEST way to launch a simple WordPress website on AWS?</strong></p>
+<label><input type='radio' name='q20' value='A'> A. Run WordPress on an Amazon Lightsail instance.</label><br>
+<label><input type='radio' name='q20' value='B'> B. Install WordPress on an Amazon EC2 instance.</label><br>
+<label><input type='radio' name='q20' value='C'> C. Use the Amazon S3 Web hosting feature.</label><br>
+<label><input type='radio' name='q20' value='D'> D. Host the website directly on AWS Cloud Development Kit (AWS CDK).</label><br>
+</div><br>
+<div class='question'><p><strong>21. Which of the following would you use to manage your encryption keys in the AWS Cloud? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q21' value='A'> A. AWS KMS.</label><br>
+<label><input type='checkbox' name='q21' value='B'> B. AWS Certificate Manager.</label><br>
+<label><input type='checkbox' name='q21' value='C'> C. AWS CodeDeploy.</label><br>
+<label><input type='checkbox' name='q21' value='D'> D. AWS CodeCommit.</label><br>
+<label><input type='checkbox' name='q21' value='E'> E. CloudHSM.</label><br>
+</div><br>
+<div class='question'><p><strong>22. Which of the following services allows you to install and run custom relational database software?</strong></p>
+<label><input type='radio' name='q22' value='A'> A. Amazon EC2.</label><br>
+<label><input type='radio' name='q22' value='B'> B. Amazon Cognito.</label><br>
+<label><input type='radio' name='q22' value='C'> C. Amazon RDS.</label><br>
+<label><input type='radio' name='q22' value='D'> D. Amazon Inspector.</label><br>
+</div><br>
+<div class='question'><p><strong>23. Your application requirements for CPU and RAM are changing in an unpredictable way. Which service can be used to dynamically adjust these resources based on load?</strong></p>
+<label><input type='radio' name='q23' value='A'> A. Auto Scaling.</label><br>
+<label><input type='radio' name='q23' value='B'> B. ELB.</label><br>
+<label><input type='radio' name='q23' value='C'> C. Amazon Route53.</label><br>
+<label><input type='radio' name='q23' value='D'> D. Amazon Elastic Container Service.</label><br>
+</div><br>
+<div class='question'><p><strong>24. A company has infrastructure hosted in an on-premises data center. They currently have an operations team that takes care of identity management. If they decide to migrate to the AWS cloud, which of the following services would help them perform the same role in AWS?</strong></p>
+<label><input type='radio' name='q24' value='A'> A. AWS IAM.</label><br>
+<label><input type='radio' name='q24' value='B'> B. AWS Outposts.</label><br>
+<label><input type='radio' name='q24' value='C'> C. AWS Federation.</label><br>
+<label><input type='radio' name='q24' value='D'> D. Amazon Redshift.</label><br>
+</div><br>
+<div class='question'><p><strong>25. What are some key design principles for designing public cloud systems? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q25' value='A'> A. Reserved capacity instead of on demand.</label><br>
+<label><input type='checkbox' name='q25' value='B'> B. Loose coupling over tight coupling.</label><br>
+<label><input type='checkbox' name='q25' value='C'> C. Servers instead of managed services.</label><br>
+<label><input type='checkbox' name='q25' value='D'> D. Disposable resources instead of fixed servers.</label><br>
+<label><input type='checkbox' name='q25' value='E'> E. Multi-AZ deployments instead of multi-region deployments.</label><br>
+</div><br>
+<div class='question'><p><strong>26. Where can AWS account owners get a list of all users in their account, including the status of their AWS credentials?</strong></p>
+<label><input type='radio' name='q26' value='A'> A. AWS CloudTrail Trails.</label><br>
+<label><input type='radio' name='q26' value='B'> B. IAM Credential Report.</label><br>
+<label><input type='radio' name='q26' value='C'> C. AWS Artifact reports.</label><br>
+<label><input type='radio' name='q26' value='D'> D. AWS Cost and Usage Report.</label><br>
+</div><br>
+<div class='question'><p><strong>27. Which of the following services enables you to easily generate and use your own encryption keys in the AWS Cloud?</strong></p>
+<label><input type='radio' name='q27' value='A'> A. AWS Shield.</label><br>
+<label><input type='radio' name='q27' value='B'> B. AWS Certificate Manager.</label><br>
+<label><input type='radio' name='q27' value='C'> C. AWS CloudHSM.</label><br>
+<label><input type='radio' name='q27' value='D'> D. AWS WAF.</label><br>
+</div><br>
+<div class='question'><p><strong>28. You have developed a web application targeting a global audience. Which of the following will help you achieve the highest redundancy and fault tolerance from an infrastructure perspective?</strong></p>
+<label><input type='radio' name='q28' value='A'> A. There is no need to architect for these capabilities in AWS, as AWS is redundant by default.</label><br>
+<label><input type='radio' name='q28' value='B'> B. Deploy the application in a single Availability Zone.</label><br>
+<label><input type='radio' name='q28' value='C'> C. Deploy the application in multiple Availability Zones in a single AWS region.</label><br>
+<label><input type='radio' name='q28' value='D'> D. Deploy the application in multiple Availability Zones in multiple AWS regions.</label><br>
+</div><br>
+<div class='question'><p><strong>29. For some services, AWS automatically replicates data across multiple Availability Zones to provide fault tolerance in the event of a server failure or Availability Zone outage. Select TWO services that automatically replicate data across Availability Zones.</strong></p>
+<label><input type='checkbox' name='q29' value='A'> A. Instance Store.</label><br>
+<label><input type='checkbox' name='q29' value='B'> B. S3.</label><br>
+<label><input type='checkbox' name='q29' value='C'> C. DynamoDB.</label><br>
+<label><input type='checkbox' name='q29' value='D'> D. Amazon Route 53.</label><br>
+<label><input type='checkbox' name='q29' value='E'> E. AWS VPN.</label><br>
+</div><br>
+<div class='question'><p><strong>30. Which of the following factors affect Amazon CloudFront cost? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q30' value='A'> A. Number of Requests.</label><br>
+<label><input type='checkbox' name='q30' value='B'> B. Traffic Distribution.</label><br>
+<label><input type='checkbox' name='q30' value='C'> C. Number of Volumes.</label><br>
+<label><input type='checkbox' name='q30' value='D'> D. Instance type.</label><br>
+<label><input type='checkbox' name='q30' value='E'> E. Storage Class.</label><br>
+</div><br>
+<div class='question'><p><strong>31. Which of the following resources can an AWS customer use to learn more about prohibited uses of the services offered by AWS?</strong></p>
+<label><input type='radio' name='q31' value='A'> A. AWS Service Control Policies (SCPs).</label><br>
+<label><input type='radio' name='q31' value='B'> B. AWS Artifact.</label><br>
+<label><input type='radio' name='q31' value='C'> C. AWS Budgets.</label><br>
+<label><input type='radio' name='q31' value='D'> D. AWS Acceptable Use Policy.</label><br>
+</div><br>
+<div class='question'><p><strong>32. Which of the following security resources are available to any user for free? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q32' value='A'> A. AWS Bulletins.</label><br>
+<label><input type='checkbox' name='q32' value='B'> B. AWS TAM.</label><br>
+<label><input type='checkbox' name='q32' value='C'> C. AWS Support APl.</label><br>
+<label><input type='checkbox' name='q32' value='D'> D. AWS Security Blog.</label><br>
+<label><input type='checkbox' name='q32' value='E'> E. AWS Classroom Training.</label><br>
+</div><br>
+<div class='question'><p><strong>33. How can you protect data stored on Amazon S3 from accidental deletion?</strong></p>
+<label><input type='radio' name='q33' value='A'> A. By enabling S3 Versioning.</label><br>
+<label><input type='radio' name='q33' value='B'> B. By configuring S3 Bucket Policies.</label><br>
+<label><input type='radio' name='q33' value='C'> C. By configuring S3 Lifecycle Policies.</label><br>
+<label><input type='radio' name='q33' value='D'> D. By disabling S3 Cross-Region Replication (CRR).</label><br>
+</div><br>
+<div class='question'><p><strong>34. Which of the following is the responsibility of AWS according to the AWS Shared Responsibility Model?</strong></p>
+<label><input type='radio' name='q34' value='A'> A. Securing regions and edge locations.</label><br>
+<label><input type='radio' name='q34' value='B'> B. Performing auditing tasks.</label><br>
+<label><input type='radio' name='q34' value='C'> C. Monitoring AWS resources usage.</label><br>
+<label><input type='radio' name='q34' value='D'> D. Securing access to AWS resources.</label><br>
+</div><br>
+<div class='question'><p><strong>35. Which of the following AWS support plans provides access to only the seven core AWS Trusted Advisor checks?</strong></p>
+<label><input type='radio' name='q35' value='A'> A. Business & Enterprise Support.</label><br>
+<label><input type='radio' name='q35' value='B'> B. Basic & Developer Support.</label><br>
+<label><input type='radio' name='q35' value='C'> C. Developer & Enterprise Support.</label><br>
+<label><input type='radio' name='q35' value='D'> D. Developer & Business Support.</label><br>
+</div><br>
+<div class='question'><p><strong>36. Which of the following is NOT a benefit of using AWS Lambda?</strong></p>
+<label><input type='radio' name='q36' value='A'> A. AWS Lambda runs code without provisioning or managing servers.</label><br>
+<label><input type='radio' name='q36' value='B'> B. AWS Lambda provides resizable compute capacity in the cloud.</label><br>
+<label><input type='radio' name='q36' value='C'> C. There is no charge when your AWS Lambda code is not running.</label><br>
+<label><input type='radio' name='q36' value='D'> D. AWS Lambda can be called directly from any mobile app.</label><br>
+</div><br>
+<div class='question'><p><strong>37. How does AWS help customers achieve compliance in the cloud?</strong></p>
+<label><input type='radio' name='q37' value='A'> A. It's not possible to meet regulatory compliance requirements in the Cloud.</label><br>
+<label><input type='radio' name='q37' value='B'> B. AWS applies the most common Cloud security standards, and is responsible for complying with customers’ applicable laws and regulations.</label><br>
+<label><input type='radio' name='q37' value='C'> C. AWS has many common assurance certifications such as ISO 9001 and HIPAA.</label><br>
+<label><input type='radio' name='q37' value='D'> D. Many AWS services are assessed regularly to comply with local laws and regulations.</label><br>
+</div><br>
+<div class='question'><p><strong>38. Who is responsible for scaling a DynamoDB database in the AWS Shared Responsibility Model?</strong></p>
+<label><input type='radio' name='q38' value='A'> A. Your security team.</label><br>
+<label><input type='radio' name='q38' value='B'> B. Your development team.</label><br>
+<label><input type='radio' name='q38' value='C'> C. AWS.</label><br>
+<label><input type='radio' name='q38' value='D'> D. Your internal DevOps team.</label><br>
+</div><br>
+<div class='question'><p><strong>39. You are working as a web app developer. You are currently facing issues in media playback for mobile devices because your media format is not supported. Which of the following AWS services can help you convert your media into another format?</strong></p>
+<label><input type='radio' name='q39' value='A'> A. Amazon Elastic Transcoder.</label><br>
+<label><input type='radio' name='q39' value='B'> B. Amazon Pinpoint.</label><br>
+<label><input type='radio' name='q39' value='C'> C. AmazonS3.</label><br>
+<label><input type='radio' name='q39' value='D'> D. Amazon Rekognition.</label><br>
+</div><br>
+<div class='question'><p><strong>40. What are the benefits of the AWS Organizations service? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q40' value='A'> A. Control access to AWS services.</label><br>
+<label><input type='checkbox' name='q40' value='B'> B. Help organizations design and maintain an accelerated path to successful cloud adoption.</label><br>
+<label><input type='checkbox' name='q40' value='C'> C. Manage your organization’s payment methods.</label><br>
+<label><input type='checkbox' name='q40' value='D'> D. Help organization achieve their desired business outcomes with AWS.</label><br>
+<label><input type='checkbox' name='q40' value='E'> E. Consolidate billing across multiple AWS accounts.</label><br>
+</div><br>
+<div class='question'><p><strong>41. Which AWS service allows you to build a data warehouse in the cloud?</strong></p>
+<label><input type='radio' name='q41' value='A'> A. AWS Shield.</label><br>
+<label><input type='radio' name='q41' value='B'> B. Amazon Redshift.</label><br>
+<label><input type='radio' name='q41' value='C'> C. Amazon RDS.</label><br>
+<label><input type='radio' name='q41' value='D'> D. Amazon Comprehend.</label><br>
+</div><br>
+<div class='question'><p><strong>42. What AWS service allows you to buy third-party software solutions and services that run on AWS resources?</strong></p>
+<label><input type='radio' name='q42' value='A'> A. AWS Application Discovery service.</label><br>
+<label><input type='radio' name='q42' value='B'> B. Amazon DevPay.</label><br>
+<label><input type='radio' name='q42' value='C'> C. AWS Marketplace.</label><br>
+<label><input type='radio' name='q42' value='D'> D. Resource Groups.</label><br>
+</div><br>
+<div class='question'><p><strong>43. Which of the following services is an AWS repository management system that allows for storing, versioning, and managing your application code?</strong></p>
+<label><input type='radio' name='q43' value='A'> A. AWS CodePipeline.</label><br>
+<label><input type='radio' name='q43' value='B'> B. AWS CodeCommit.</label><br>
+<label><input type='radio' name='q43' value='C'> C. AWS X-Ray.</label><br>
+<label><input type='radio' name='q43' value='D'> D. Amazon Inspector.</label><br>
+</div><br>
+<div class='question'><p><strong>44. Which AWS service can be used to route end users to the nearest AWS Region to reduce latency?</strong></p>
+<label><input type='radio' name='q44' value='A'> A. Amazon Cognito.</label><br>
+<label><input type='radio' name='q44' value='B'> B. AWS Systems Manager.</label><br>
+<label><input type='radio' name='q44' value='C'> C. AWS Cloud9.</label><br>
+<label><input type='radio' name='q44' value='D'> D. Amazon Route 53.</label><br>
+</div><br>
+<div class='question'><p><strong>45. Which feature enables users to sign into their AWS accounts with their existing corporate credentials?</strong></p>
+<label><input type='radio' name='q45' value='A'> A. Federation.</label><br>
+<label><input type='radio' name='q45' value='B'> B. Access keys.</label><br>
+<label><input type='radio' name='q45' value='C'> C. IAM Permissions.</label><br>
+<label><input type='radio' name='q45' value='D'> D. WAF rules.</label><br>
+</div><br>
+<div class='question'><p><strong>46. According to the AWS shared responsibility model, what are the controls that customers fully inherit from AWS? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q46' value='A'> A. Awareness and Training.</label><br>
+<label><input type='checkbox' name='q46' value='B'> B. Communications controls.</label><br>
+<label><input type='checkbox' name='q46' value='C'> C. Data center security controls.</label><br>
+<label><input type='checkbox' name='q46' value='D'> D. Environmental controls.</label><br>
+<label><input type='checkbox' name='q46' value='E'> E. Resource Configuration Management.</label><br>
+</div><br>
+<div class='question'><p><strong>47. What can you access by visiting the URL: <http://status.aws.amazon.com>?</strong></p>
+<label><input type='radio' name='q47' value='A'> A. AWS Billing Dashboard.</label><br>
+<label><input type='radio' name='q47' value='B'> B. AWS Cost Dashboard.</label><br>
+<label><input type='radio' name='q47' value='C'> C. AWS Service Health Dashboard.</label><br>
+<label><input type='radio' name='q47' value='D'> D. AWS Security Dashboard.</label><br>
+</div><br>
+<div class='question'><p><strong>48. Which of the following procedures can reduce latency when your end users are retrieving data? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q48' value='A'> A. Store media assets in the region closest to your end users.</label><br>
+<label><input type='checkbox' name='q48' value='B'> B. Store media assets on an additional EBS volume and increase the capacity of your server.</label><br>
+<label><input type='checkbox' name='q48' value='C'> C. Replicate media assets to at least two availability zones.</label><br>
+<label><input type='checkbox' name='q48' value='D'> D. Reduce the size of media assets using the Amazon Elastic Transcoder.</label><br>
+<label><input type='checkbox' name='q48' value='E'> E. Store media assets in S3 and use CloudFront to distribute these assets.</label><br>
+</div><br>
+<div class='question'><p><strong>49. Which of the following are part of the seven design principles for security in the cloud? (Choose TWO)</strong></p>
+<label><input type='checkbox' name='q49' value='A'> A. Use manual monitoring techniques to protect your AWS resources.</label><br>
+<label><input type='checkbox' name='q49' value='B'> B. Use IAM roles to grant temporary access instead of long-term credentials.</label><br>
+<label><input type='checkbox' name='q49' value='C'> C. Scale horizontally to protect from failures.</label><br>
+<label><input type='checkbox' name='q49' value='D'> D. Enable real-time traceability.</label><br>
+<label><input type='checkbox' name='q49' value='E'> E. Never store sensitive data in the cloud.</label><br>
+</div><br>
+<div class='question'><p><strong>50. A company is migrating production workloads to AWS, and they are concerned about cost management across different departments. Which option should the company implement to categorize and track AWS spending?</strong></p>
+<label><input type='radio' name='q50' value='A'> A. Use the AWS Pricing Calculator service to monitor the costs incurred by each department.</label><br>
+<label><input type='radio' name='q50' value='B'> B. Use Amazon Aurora to forecast AWS spending based on usage.</label><br>
+<label><input type='radio' name='q50' value='C'> C. Apply cost allocation tags to segment AWS costs by different e projects and departments.</label><br>
+<label><input type='radio' name='q50' value='D'> D. Configure AWS Price List API to receive billing updates for each department automatically.</label><br>
+</div><br>
+
+        <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+    <p id="result" class="summary"></p>
+
+    <script>
+        const answers = {}
+answers['q1'] = ['C', 'D'];
+answers['q2'] = ['D'];
+answers['q3'] = ['C', 'E'];
+answers['q4'] = ['B', 'E'];
+answers['q5'] = ['B'];
+answers['q6'] = ['A'];
+answers['q7'] = ['A', 'E'];
+answers['q8'] = ['A'];
+answers['q9'] = ['A'];
+answers['q10'] = ['B'];
+answers['q11'] = ['B'];
+answers['q12'] = ['B', 'C'];
+answers['q13'] = ['A'];
+answers['q14'] = ['B'];
+answers['q15'] = ['B'];
+answers['q16'] = ['D'];
+answers['q17'] = ['C'];
+answers['q18'] = ['D'];
+answers['q19'] = ['A'];
+answers['q20'] = ['A'];
+answers['q21'] = ['A', 'E'];
+answers['q22'] = ['A'];
+answers['q23'] = ['A'];
+answers['q24'] = ['A'];
+answers['q25'] = ['B', 'D'];
+answers['q26'] = ['B'];
+answers['q27'] = ['C'];
+answers['q28'] = ['D'];
+answers['q29'] = ['B', 'C'];
+answers['q30'] = ['A', 'B'];
+answers['q31'] = ['D'];
+answers['q32'] = ['A', 'D'];
+answers['q33'] = ['A'];
+answers['q34'] = ['A'];
+answers['q35'] = ['B'];
+answers['q36'] = ['D'];
+answers['q37'] = ['C'];
+answers['q38'] = ['C'];
+answers['q39'] = ['A'];
+answers['q40'] = ['A', 'E'];
+answers['q41'] = ['B'];
+answers['q42'] = ['C'];
+answers['q43'] = ['B'];
+answers['q44'] = ['D'];
+answers['q45'] = ['A'];
+answers['q46'] = ['C', 'D'];
+answers['q47'] = ['C'];
+answers['q48'] = ['A', 'E'];
+answers['q49'] = ['B', 'D'];
+answers['q50'] = ['C'];
+
+
+        function submitQuiz() {
+            let score = 0;
+            let total = Object.keys(answers).length;
+
+            for (let key in answers) {
+                let selected = Array.from(document.querySelectorAll(`input[name='${key}']:checked`)).map(el => el.value);
+                let correct = answers[key];
+
+                let selectedSorted = selected.slice().sort().join('');
+                let correctSorted = correct.slice().sort().join('');
+                let isCorrect = selectedSorted === correctSorted;
+
+                if (isCorrect) score++;
+            }
+
+            document.getElementById("result").innerText = `Your Score: ${score} / ${total}`;
+        }
+    </script>
+</body>
+</html>
