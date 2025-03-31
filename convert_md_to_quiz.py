@@ -25,12 +25,13 @@ def parse_markdown_to_quiz_html(markdown_text, exam_title="AWS Practice Exam"):
         correct = re.search(r"Correct answer: ([A-E](?:,\s?[A-E])*)", block)
         correct_answers = [c.strip() for c in correct.group(1).split(",")] if correct else []
 
-        questions_html += f"<div class='question'><p><strong>{q_number}. {question_text}</strong></p>\n"
+        questions_html += f"<div class='question' id='q{q_number}-container'><p><strong>{q_number}. {question_text}</strong></p>\n"
         for opt in options:
             opt_val, opt_text = opt
             input_type = "checkbox" if len(correct_answers) > 1 else "radio"
             name_attr = f"name='q{q_number}'"
             questions_html += f"<label><input type='{input_type}' {name_attr} value='{opt_val}'> {opt_val}. {opt_text}</label><br>\n"
+        questions_html += f"<p id='q{q_number}-feedback' class='feedback'></p>\n"
         questions_html += "</div><br>\n"
 
         score_script += f"answers['q{q_number}'] = {correct_answers};\n"
@@ -45,6 +46,9 @@ def parse_markdown_to_quiz_html(markdown_text, exam_title="AWS Practice Exam"):
         body {{ font-family: Arial; padding: 20px; max-width: 800px; margin: auto; }}
         .question {{ margin-bottom: 20px; }}
         .summary {{ font-weight: bold; font-size: 1.2em; }}
+        .correct {{ color: green; }}
+        .incorrect {{ color: red; }}
+        .feedback {{ font-style: italic; margin-top: 5px; }}
     </style>
 </head>
 <body>
@@ -63,14 +67,22 @@ def parse_markdown_to_quiz_html(markdown_text, exam_title="AWS Practice Exam"):
             let total = Object.keys(answers).length;
 
             for (let key in answers) {{
-                let selected = Array.from(document.querySelectorAll(`input[name='${{key}}']:checked`)).map(el => el.value);
-                let correct = answers[key];
+                const selected = Array.from(document.querySelectorAll(`input[name='${{key}}']:checked`)).map(el => el.value);
+                const correct = answers[key];
 
-                let selectedSorted = selected.slice().sort().join('');
-                let correctSorted = correct.slice().sort().join('');
-                let isCorrect = selectedSorted === correctSorted;
+                const selectedSorted = selected.slice().sort().join('');
+                const correctSorted = correct.slice().sort().join('');
+                const isCorrect = selectedSorted === correctSorted;
 
-                if (isCorrect) score++;
+                const feedbackEl = document.getElementById(`${{key}}-feedback`);
+                if (isCorrect) {{
+                    score++;
+                    feedbackEl.innerText = "✅ Correct";
+                    feedbackEl.className = "feedback correct";
+                }} else {{
+                    feedbackEl.innerText = "❌ Incorrect. Correct answer(s): " + correct.join(", ");
+                    feedbackEl.className = "feedback incorrect";
+                }}
             }}
 
             document.getElementById("result").innerText = `Your Score: ${{score}} / ${{total}}`;
